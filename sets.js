@@ -1,6 +1,8 @@
 /* Sets */
 //A set is a collection of non-repeating elements
-
+//In ES6, sets are included, and the methods we have will be included in those as well
+//with the exception of Size, its a property not a method
+//as well as add, its called something else, look into it
 function mySet(){
     //the collection will hold the set
     var collection = [];
