@@ -15,15 +15,18 @@ function mySet(){
         return collection;
     };
 
-//this method will add an element to the set 
+
+    //this method will add an element to the set 
     this.add = function(element){
         if(!this.has(element)){
             collection.push(element);
             return true;
         }
+        //else condition
         return false;
     };
-//this method will remove an element from the list 
+
+    //this method will remove an element from the list 
     this.remove = function(element){
         if(this.has(element)){
             index = collection.indexOf(element)
