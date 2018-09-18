@@ -10,8 +10,20 @@ function mySet(){
         return (collection.indexOf(element)!== -1);
     }
     
-    //this method will return the valuesDD
+    //this method will return the values in the set
     this.values = function(){
         return collection;
     }
-}
+
+//this method will add an elemetn to the set 
+    this.add = function(element){
+        if(!this.has(element)){
+            collection.push(element);
+            return true;
+        }
+        return false;
+    }
+
+};
+
+
