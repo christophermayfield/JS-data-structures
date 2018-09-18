@@ -37,6 +37,15 @@ function mySet(){
         }
         return false;
     }
+    
+    //these methods down here are not included in the ES6 implementation of Sets, but are an important aspect of sets. 
+    
+    //this method will return the union of the two sets
+    this.union = function(otherSet) {
+        var unionSet = new Set();
+        var firstSet = this.values();
+        var secondSet = otherSet.values();
+    }
 
 
 //endset
