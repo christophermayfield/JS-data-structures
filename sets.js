@@ -47,13 +47,18 @@ function mySet(){
         var secondSet = otherSet.values();
         firstSet.forEach(function(e){
             unionSet.add(e);
-        })
-            
+        });
         
-    }
+        secondSet.forEach(function(e){
+            unionSet.add(e);
+        })
+        
+        return unionSet;    
+        
+    };
 
 
-//endset
-};
+
+}; //endset
 
 
