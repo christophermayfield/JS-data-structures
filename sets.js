@@ -1,4 +1,5 @@
 /* Sets */
+//A set is a collection of non-repeating elements
 
 function mySet(){
     //the collection will hold the set
