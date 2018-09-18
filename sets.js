@@ -42,7 +42,7 @@ function mySet(){
     
     //this method will return the union of the two sets
     this.union = function(otherSet) {
-        var unionSet = new Set();
+        var unionSet = new mySet();
         var firstSet = this.values();
         var secondSet = otherSet.values();
         firstSet.forEach(function(e){
@@ -50,15 +50,22 @@ function mySet(){
         });
         
         secondSet.forEach(function(e){
-            unionSet.add(e);
+            unionSet.add(e); //.add() does not add any duplicates so we have that problem solved
         })
         
         return unionSet;    
         
     };
-
+    //this method will return the difference of two sets as a new set 
     this.intersection = function(otherSet){
-        
+        var intersectionSet = new Set();
+        var firstSet = this.values();
+        firstSet.forEach(function(e){
+           if(!otherSet.has(e)){
+               intersectionSet.add(e);
+           } 
+        });
+        return intersectionSet;
     }
 
 }; //endset
