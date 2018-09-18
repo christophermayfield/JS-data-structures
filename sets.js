@@ -45,6 +45,11 @@ function mySet(){
         var unionSet = new Set();
         var firstSet = this.values();
         var secondSet = otherSet.values();
+        firstSet.forEach(function(e){
+            unionSet.add(e);
+        })
+            
+        
     }
 
 
