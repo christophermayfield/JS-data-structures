@@ -36,7 +36,7 @@ function mySet(){
             return true;
         }
         return false;
-    }
+    };
     
     //these methods down here are not included in the ES6 implementation of Sets, but are an important aspect of sets. 
     
@@ -57,7 +57,9 @@ function mySet(){
         
     };
 
-
+    this.intersection = function(otherSet){
+        
+    }
 
 }; //endset
 
