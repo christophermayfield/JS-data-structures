@@ -2,7 +2,8 @@
 //A set is a collection of non-repeating elements
 //In ES6, sets are included, and the methods we have will be included in those as well
 //with the exception of Size, its a property not a method
-//as well as add, its called something else, look into it
+//as well as add, its called something else, look into that
+
 function mySet(){
     //the collection will hold the set
     var collection = [];
@@ -56,16 +57,21 @@ function mySet(){
         return unionSet;    
         
     };
-    //this method will return the difference of two sets as a new set 
+    //this method will return the intersection of two sets as a new set.
     this.intersection = function(otherSet){
         var intersectionSet = new Set();
         var firstSet = this.values();
         firstSet.forEach(function(e){
-           if(!otherSet.has(e)){
+           if(otherSet.has(e)){
                intersectionSet.add(e);
            } 
         });
         return intersectionSet;
+    };
+    
+    //this method will return the difference of two sets as a new set. 
+    this.difference = function(otherSet) {
+        var differenceSet = new Set();d
     }
 
 }; //endset
