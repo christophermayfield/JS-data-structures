@@ -77,10 +77,18 @@ function mySet(){
         firstSet.for(function(e){
             if(!otherSet.has(e)){
                 differenceSet.add(e);
-            }
-        })
+            };
+        });
        return differenceSet; 
-    }
+    };
+    
+    this.subset = function(otherSet){
+      var firstSet = this.values();
+        return firstSet.every(function(value){
+            return otherSet.has(value);
+        });
+                             
+    };
 
 }; //endset
 
