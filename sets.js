@@ -74,6 +74,12 @@ function mySet(){
         var differenceSet = new Set();
         var firstSet = this.values();
         
+        firstSet.for(function(e){
+            if(!otherSet.has(e)){
+                differenceSet.add(e);
+            }
+        })
+       return differenceSet; 
     }
 
 }; //endset
