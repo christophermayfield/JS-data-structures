@@ -71,7 +71,9 @@ function mySet(){
     
     //this method will return the difference of two sets as a new set. 
     this.difference = function(otherSet) {
-        var differenceSet = new Set();d
+        var differenceSet = new Set();
+        var firstSet = this.values();
+        
     }
 
 }; //endset
