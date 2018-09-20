@@ -94,4 +94,14 @@ function mySet(){
 
 } //endset
 
+const setA = new mySet();
+const setB = new mySet();
+setA.add('a');
+setA.add('b');
+setA.add('c');
+setA.add('d');
+setA.add('a');
+setA.add('d');
+
+console.log(setA.subset(setB));
 
