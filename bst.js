@@ -63,3 +63,22 @@ findMax() {
     }
     return current.right;
 }
+
+find(data){
+    let current = this.root;
+    while(current.data !== data) {
+        if(data < current.data) {
+            current = current.left;
+        } else {
+            current = current.right;
+        }
+        if(curent === data) {
+            return null;
+        }
+    }
+    return current;
+}
+
+isPresent(data){
+    let current = this.root;
+}
