@@ -9,7 +9,7 @@ class Node {
     
 }
 
-
+//the Binary Search Tree
 class BST {
     constructor(){
         this.root = null;
@@ -81,4 +81,16 @@ find(data){
 
 isPresent(data){
     let current = this.root;
+    
+    while(current){
+        if(data === current.data){
+            return true;
+        }
+        if(data < current.data){
+            current = current.left;
+        } else {
+            current = current.right;
+        }
+    }
+    return false;
 }
