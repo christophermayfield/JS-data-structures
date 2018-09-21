@@ -104,4 +104,7 @@ setA.add('a');
 setA.add('d');
 
 console.log(setA.subset(setB));
+var setC = new Set();
+var setD = new Set();
+
 
