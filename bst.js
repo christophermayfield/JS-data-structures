@@ -44,5 +44,6 @@ add(data){
                 return null;
             }
         };
+        return searchTree(node); //how we call the function (initially)
     }
 }
