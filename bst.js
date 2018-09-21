@@ -47,3 +47,19 @@ add(data){
         return searchTree(node); //how we call the function (initially)
     }
 }
+
+findMin(){
+    let current = this.root;
+    while(current.left !== null){
+        current = current.left;
+    }
+    return current.left;
+}
+
+findMax() {
+    let current = this.root;
+    while(current.right !== null) {
+        current = current.right;
+    }
+    return current.right;
+}
