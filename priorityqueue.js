@@ -1,5 +1,6 @@
 //Priority Queue
 //Elements with a higher priority are sent to the front of the queue.
+//If they're the same priority, they will come according to when they're pushed into the array. 
 
 function PriorityQueue(){
     var collection = [];
