@@ -37,9 +37,18 @@ function PriorityQueue(){
     
     this.size = function(){
         return collection.length;
-    };
+    };   
     
     this.isEmpty = function(){
         return (collection.length === 0);
     };
 }
+
+var pq = new PriorityQueue();
+pq.enqueue(["chris mayfield", 2]);
+pq.enqueue(['Karina Robledo',3]);
+pq.enqueue(['Ian Goodfellow', 1]);
+pq.printCollection();
+pq.dequeue();
+pq.front();
+pq.printCollection();
