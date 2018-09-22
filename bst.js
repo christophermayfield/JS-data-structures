@@ -98,12 +98,14 @@ isPresent(data){
 
 remove(data) {
     const removeNode = function(node, data) {
-        if(node == null) {
+        if(node == null) { //checks if we have an empty tree.
             return null;
         }
         
         if(data == node.data) {
             //node has no children
+        } if(node.left == null && node.right == null) {
+            return null;
         }
     }
 }
