@@ -158,8 +158,60 @@ findMaxHeight(node = this.root) {
     
     let left = this.findMaxHeight(node.left);
     let right = this.findMaxHeight(node.right);
+    
+    if(left > right) {
+        return left + 1;
+    } else {
+        return right + 1;
+    }
 }
 
+inOrder() {
+    if(this.root == null) {
+        return null;
+    } else {
+        var result = new Array();
+        function traverseInOrder(node) {
+            node.left && traverseInOrder(node.left)
+            result.push(node.data);
+            node.right && traverseInOrder(node.right);
+        }
+        traverseInOrder(this.root);
+        return result;
+    };
+}
+
+
+preOrder() {
+    if(this.root == null) {
+        return null;
+    } else {
+        var result = new Array();
+        function traverseInOrder(node) {
+            result.push(node.data);
+            node.left && traverseInOrder(node.left)
+            node.right && traverseInOrder(node.right);
+        }
+        traverseInOrder(this.root);
+        return result;
+    };
+}
+
+
+postOrder() {
+    if(this.root == null) {
+        return null;
+    } else {
+        var result = new Array();
+        function traverseInOrder(node) {
+            node.left && traverseInOrder(node.left)
+            node.right && traverseInOrder(node.right);
+            result.push(node.data);
+        }
+        traverseInOrder(this.root);
+        return result;
+    };
+}
 
 const bst = new BST();
 bst.add(4);
