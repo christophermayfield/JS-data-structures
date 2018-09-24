@@ -65,6 +65,16 @@ let HashTable = function(){
   };
 
 };
-    
+
+
+console.log(hash('chris', 10))
+
+let ht = new HashTable();
+ht.add('karina', 'person');
+ht.add('dyson', 'cat');
+ht.add('rex', 'dinosour');
+ht.add('tux', 'penguin')
+console.log(ht.lookup('tux'))
+ht.print();
     
 }
