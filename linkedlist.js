@@ -64,7 +64,7 @@ fucntion LinkedList() {
     }; 
     
     this.elementAt = function(index) {
-        var currentNode = head;
+        var currentNode = head; //starting at the beginning
         var count = 0;
         
         while(count < index) { //means we haven't gotten to the index we are searching for.
@@ -77,18 +77,27 @@ fucntion LinkedList() {
     //allows us to add anywhere in the linked list, not just the start
     this.addAt = function(index, element) {
         var node = new Node(element);
-        var curentNode = head;
-        var previous node;
+        var currentNode = head; //starting at the beginning
+        var previousNode;
         var currentIndex = 0;
         
-        if(index < length) {
+        if(index > length) {
             return false;
         }
         
         if(index === 0) {
             node.next = currentNode;
             head = node;
+        } else {
+            while(currentIndex < index) {
+                currentIndex++;
+                previousNode = currentNode;
+                currentNode = currentNode.next;
+            }
+            node.next = currentNode;
+            previousNode.next = node;
         }
+        length++;
     };
     
 
