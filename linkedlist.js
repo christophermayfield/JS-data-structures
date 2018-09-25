@@ -16,6 +16,9 @@ this.head = function() { //returns the head of the linked list.
     return head;
 }
 
+this.add = function() {
+    var node = new Node();
+}
 
     
 };
