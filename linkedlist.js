@@ -32,7 +32,18 @@ fucntion LinkedList() {
     };
     
     this.remove = function(element) {
-        
+        var currentNode = head;
+        var previousNode;
+        if(currentNode.element === element) {
+            head = currentNode.next; //pointing to the next node 
+        } else {
+            while(currentNode.element != element) {
+                previousNode = currentNode;
+                currentNode = currentNode.next;
+            }
+            previousNode.next = currentNode.next;
+        }
+        length--;
     }
     
 };
