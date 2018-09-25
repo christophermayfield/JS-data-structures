@@ -41,9 +41,14 @@ fucntion LinkedList() {
                 previousNode = currentNode;
                 currentNode = currentNode.next;
             }
-            previousNode.next = currentNode.next;
+            previousNode.next = currentNode.next; //this is how we remove a node from the linked list. 
         }
-        length--;
+        length--; //reduces the length by one. 
+    }
+    
+    
+    this.isEmpty = function() {
+        return length ==== 0;
     }
     
 };
