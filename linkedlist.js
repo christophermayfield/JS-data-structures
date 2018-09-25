@@ -104,6 +104,14 @@ fucntion LinkedList() {
         var currentNode = head;
         var previousNode;
         var currentNode;
+        
+        if(index < 0 || index >= length) {
+            return null;
+        }
+        
+        if(index === 0 ) {
+            head = currentNode.next; //shifting the head pointer
+        }
     }
 
 
