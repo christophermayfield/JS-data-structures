@@ -9,5 +9,17 @@ let Node = function() {
     };
     this.isEnd = function() {
         return this.end;
+    };
+};
+
+let Trie = function() {
+    
+    this.root = new Node();
+    
+    this.add = function(input, node = this.root) {
+        if(input.length == 0) {
+            
+        }
     }
-}
+    
+} //end Trie
