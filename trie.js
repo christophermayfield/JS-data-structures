@@ -30,6 +30,15 @@ let Trie = function() {
     
     this.isWord = function(word) {
         let node = this.root;
-    }   
+        while(word.length > 1) {
+            if(!node.keys.has(word[0])) {
+                return false;
+            } else {
+                node = node.keys.get(word[0]);
+                word = word.substr(1);
+            }
+        }
+        return (node.keys.has(word) && node.keys.get(word).isEnd())? true: false;
+    }
     
 } //end Trie
