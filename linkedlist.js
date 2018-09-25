@@ -100,7 +100,11 @@ fucntion LinkedList() {
         length++;
     };
     
-
+    this.removeAt = function(index) {
+        var currentNode = head;
+        var previousNode;
+        var currentNode;
+    }
 
 
 }; //end LinkedList function
