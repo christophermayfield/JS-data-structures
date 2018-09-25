@@ -103,7 +103,7 @@ fucntion LinkedList() {
     this.removeAt = function(index) {
         var currentNode = head;
         var previousNode;
-        var currentNode;
+        var currentIndex = 0;
         
         if(index < 0 || index >= length) {
             return null;
@@ -111,8 +111,25 @@ fucntion LinkedList() {
         
         if(index === 0 ) {
             head = currentNode.next; //shifting the head pointer
+        } else {
+            while(currentIndex < index) {
+                currentIndex++;
+                previousNode = currentNode;
+                currentNode = currentNode.next;
+            }
+            previousNode.next = currentNode.next;
         }
+        length--;
+        return currentNode.element;
     }
 
 
 }; //end LinkedList function
+
+
+var conda = new LinkedList();
+conda.add("Kitten");
+conda.add("Puppy");
+conda.add("Dog");
+conda.add("Cat");
+console.log(conda.removeAt(3));
