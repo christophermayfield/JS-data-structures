@@ -68,7 +68,7 @@ let MinHeap = function() {
 		};
 		return smallest;
 	};
-  
+    //sorts the array in order
 	this.sort = function() {
 		let result = new Array();
 		while (heap.length > 1) {
