@@ -24,7 +24,7 @@ let MinHeap = function() {
 				if (idx >= 1) {
 					[heap[Math.floor(idx/2)], heap[idx]] = [heap[idx], heap[Math.floor(idx/2)]]; //ES6 structuring syntax to switch the node to the parent node as long as its smaller than the parent node
 					if (Math.floor(idx/2) > 1) {
-						idx = Math.floor(idx/2);
+						idx = Math.floor(idx/2); //set idx = parent
 					} else {
 						break;
 					};
@@ -36,7 +36,7 @@ let MinHeap = function() {
 	this.remove = function() { //remove the smallest node.
 		let smallest = heap[1];
 		if (heap.length > 2) {
-			heap[1] = heap[heap.length - 1];
+			heap[1] = heap[heap.length - 1]; //figure out what this does.
 			heap.splice(heap.length - 1);
 			if (heap.length == 3) {
 				if (heap[1] > heap[2]) {
