@@ -1,6 +1,8 @@
 /* Linked List */ 
 /* how it works, learn it more */
 
+/* this is a linkedList function */ 
+
 fucntion LinkedList() {
     var length = 0;
     var head = null;
