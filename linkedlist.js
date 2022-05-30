@@ -6,6 +6,8 @@
 fucntion LinkedList() {
     var length = 0;
     var head = null;
+    
+    /* a node */ 
 
     var Node = function(element) {
         this.element = element; //the thing that the list is going to have
