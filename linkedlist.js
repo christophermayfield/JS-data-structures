@@ -1,4 +1,5 @@
 /* Linked List */ 
+/* how it works, learn it more */
 
 fucntion LinkedList() {
     var length = 0;

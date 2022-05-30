@@ -10,6 +10,7 @@ this.push = function(value) {
     this.count++;
     }
 
+
 //Removes and returns the value at the end of the stack
 this.pop = function(){
     if(this.count == 0) {
