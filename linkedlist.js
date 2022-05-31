@@ -36,6 +36,7 @@ fucntion LinkedList() {
         length++;
     };
     
+    //removes an element 
     this.remove = function(element) {
         var currentNode = head;
         var previousNode;
