@@ -9,6 +9,8 @@ var hash = (string, max) => {
     return has % max; //divide by the number of buckets and return the remainder.
 };
 
+//creating the hashtable
+
 let HashTable = function(){
     let storage = [];
     const storageLimit = 4;
