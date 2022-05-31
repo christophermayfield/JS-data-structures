@@ -19,6 +19,8 @@ let HashTable = function(){
         console.log(storage);
     };
     
+    //adds the value to it 
+    
     this.add = function(key, value) {
     var index = hash(key, storageLimit);
     if (storage[index] === undefined) {
