@@ -41,6 +41,8 @@ let HashTable = function(){
     }
   };
     
+    //removes the variable
+    
     this.remove = function(key) {
     var index = hash(key, storageLimit);
     if (storage[index].length === 1 && storage[index][0][0] === key) {
