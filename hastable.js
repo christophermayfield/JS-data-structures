@@ -20,7 +20,7 @@ let HashTable = function(){
     };
     
     //adds the value to it 
-    
+    term
     this.add = function(key, value) {
     var index = hash(key, storageLimit);
     if (storage[index] === undefined) {
@@ -57,6 +57,7 @@ let HashTable = function(){
   };
     
   
+    //allows you to look up what's in the hash
     this.lookup = function(key) {
     var index = hash(key, storageLimit);
     if (storage[index] === undefined) {
