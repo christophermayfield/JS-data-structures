@@ -16,3 +16,15 @@ function selectionSort(arr) {
         }
     }
 }
+
+
+
+/* 
+
+Worst-case time complexity: Big O (n^2).
+Average-case time complexity: Big theta (n^2).
+Best-case time complexity: Big omega (n).
+Space complexity: Big O(1).
+
+
+*/
