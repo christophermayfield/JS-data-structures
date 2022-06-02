@@ -22,6 +22,8 @@ let MaxHeap = function() {
 			};
 		};
 	};
+    
+    //function to remove from the heap
 	
 	this.remove = function() {
 		let smallest = heap[1];
