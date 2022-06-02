@@ -2,9 +2,9 @@
 
 let MaxHeap = function() {
 	
-	let heap = [null]; // array set to nothing.
+	let heap = [null]; // array set to nothing in it
 	
-	this.print = () => heap; //es6 arrow syntax
+	this.print = () => heap; //es6 arrow syntax pretty sick
 
 	this.insert = function(num) {
 		heap.push(num);
