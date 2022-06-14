@@ -1,8 +1,11 @@
 //merge sort 
 
-function merge(arr1,arr2) {
+function mergeSort(unsortedArray) {
 
 
-//recursion base case
+//recursion base case:
+    if (unsortedArray <= 1) {
+        return unsortedArray;
+    }
 
 }
