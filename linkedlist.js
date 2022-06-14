@@ -132,7 +132,7 @@ fucntion LinkedList() {
 
 }; //end LinkedList function
 
-//running code for it
+//running code for linked list
 var conda = new LinkedList();
 conda.add("Kitten");
 conda.add("Puppy");
