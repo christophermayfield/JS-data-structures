@@ -28,5 +28,5 @@ Average-case time complexity: Big theta (n^2).
 Best-case time complexity: Big omega (n).
 Space complexity: Big O(1).
 
-
+pretty fun to write
 */
