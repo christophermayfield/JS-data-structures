@@ -38,7 +38,7 @@ function merge (left, right) {
   }
 
   // We need to concat here because there will be one element remaining
-  // from either left OR the right
+  // from either left side OR the right side
   return resultArray
           .concat(left.slice(leftIndex))
           .concat(right.slice(rightIndex));
