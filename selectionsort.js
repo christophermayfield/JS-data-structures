@@ -4,8 +4,10 @@ function selectionSort(arr) {
     let min; 
     
     for(let i = 0; i < arr.length; i++) {
+        //index of the smallest element to be the ith element
         min = i;
         
+        //check through the array for a lesser value element
         for(let j = i+1; j < arr.length; j++) {
             if(arr[j] < arr[min]){
                 min = j;
