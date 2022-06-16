@@ -54,7 +54,7 @@ fucntion LinkedList() {
     }
     
     this.isEmpty = function() {
-        return length ==== 0;
+        return length === 0;
     };
     
     this.indexOf = function(element) {
