@@ -21,6 +21,7 @@ fucntion LinkedList() {
         return head;
     }
 
+    //add an element to the linked list.
     this.add = function() {
         var node = new Node();
         if(head === null) {
