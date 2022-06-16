@@ -13,7 +13,7 @@ function merge(arr1, arr2) {
         if (arr1[i] < arr1[min]) {
           //also swap the elements
           [arr1[i], arr1[min]] = [arr1[min], arr1[i]];
-          //change the minimum
+          //change the minimum value
           min = i;
         }
       }
