@@ -12,5 +12,12 @@ function digitCount(num) { //this allows us to find how many times we need to pu
 
 function mostDigits(nums) {
     //will take an array of numbers loop over them, and keep track of the digit count of the longest number
+    let maxDigits = 0;
     
+    for(let i = 0; i < nums.length; i++) {
+        maxDigits = Math.max(maxDigits,digitCount(nums[i]));
+        
+
+    }
+    return maxDigits;
 }
