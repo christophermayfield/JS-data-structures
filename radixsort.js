@@ -22,6 +22,8 @@ function mostDigits(nums) {
     return maxDigits;
 }
 
+
+//radix sort algo
 function radixSort(arrofNums) {
     let maxDigitCount = mostDigits(arrofNums);
     for(let k = 0; k < maxDigitCount; k++) {
