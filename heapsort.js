@@ -37,6 +37,10 @@ class MaxHeap {
         }
     }
 
+    delete(){
+        
+    }
+
 }
 
 //max heap function below
