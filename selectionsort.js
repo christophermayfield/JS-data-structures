@@ -17,6 +17,7 @@ function selectionSort(arr) {
             [arr[i], arr[min]]= [arr[min], arr[i]];
         }
     }
+    return arr;
 }
 
 
