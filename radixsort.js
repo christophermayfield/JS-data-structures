@@ -23,7 +23,8 @@ function mostDigits(nums) {
 }
 
 
-//radix sort algo
+//radix sort algo. 
+//takes an array of nums in the parameter.
 function radixSort(arrofNums) {
     let maxDigitCount = mostDigits(arrofNums);
     for(let k = 0; k < maxDigitCount; k++) {
