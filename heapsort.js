@@ -25,5 +25,11 @@ class MaxHeap {
         this.heap[b] = temp;
     }
 
+    insert(item) {
+        this.heap.push(item);
+        var index = this.heap.length - 1;
+        var parent = this.parentIndex(index);
+    }
+
 }
 
