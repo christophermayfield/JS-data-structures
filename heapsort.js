@@ -1,4 +1,4 @@
-//heap sort
+//heap sort algorithim 
 
 
 //max heap class
@@ -38,7 +38,7 @@ class MaxHeap {
     }
 
     delete(){
-        
+
     }
 
 }
