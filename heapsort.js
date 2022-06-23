@@ -37,10 +37,27 @@ class MaxHeap {
         }
     }
 
-    delete(){
-
+    
+        
+    delete() {
+        var item = this.heap.shift();
+        this.heap.unshift(this.heap.pop());
+        var index = 0;
+        var leftChild = this.leftChildIndex(index);
+        var rightChild = this.rightChildIndex(index);
+        while(this.heap[leftChild] && this.heap[leftChild] > this.heap[index] || this.heap[rightChild] > this.heap[index]){
+            var max = leftChild;
+            if(this.heap[rightChild] && this.heap[rightChild] > this.heap[max]){
+                max = rightChild
+            }
+            this.swap(max, index);
+            index = max;
+            leftChild = this.leftChildIndex(max);
+            rightChild = this.rightChildIndex(max);
+        }
+        return item;
     }
 
-}
+
 
 //max heap function below
