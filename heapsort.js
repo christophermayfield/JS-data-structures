@@ -76,3 +76,9 @@ function heapSort(arr){
     }
     return sorted;
 }
+
+//test code
+let arr = [1, 6, 2, 3, 7, 3, 4, 6, 9];
+arr = heapSort(arr);
+
+console.log(arr);
